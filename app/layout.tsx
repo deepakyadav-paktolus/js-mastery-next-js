@@ -45,7 +45,7 @@ export default function RootLayout({
         <div className="fixed bottom-0 left-0 w-full h-[50vh] bg-black -z-10" />
 
         {/* Optional smooth gradient blend */}
-        <div className="fixed top-[40vh] left-0 w-full h-[20vh] bg-gradient-to-b from-transparent to-black -z-10" />
+        <div className="fixed top-[40vh] left-0 w-full h-[20vh] bg-linear-to-b from-transparent to-black -z-10" />
 
         <Navbar />
 

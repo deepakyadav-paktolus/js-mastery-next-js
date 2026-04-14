@@ -4,13 +4,12 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header>
-      <nav className="flex justify-between bg-black/30 mb-4">
-        <Link href={"/"} className="flex items-center space-x-2">
-        <Image src={'globe.svg'} className="rounded-full" alt="Logo" width={10} height={10}/>
-        
-        <span className="text-xl font-bold text-gray-800">DevEvent</span>
+      <nav>
+        <Link href="/" className="logo">
+          <Image src="/icons/logo.png" alt="logo" width={24} height={24} />
+          <p>DevEvent</p>
         </Link>
-        <ul className="flex gap-6 justify-end mr-4 m-5">
+        <ul>
           <Link href="/">Home</Link>
           <Link href="/">Events</Link>
           <Link href="/">Create Event</Link>

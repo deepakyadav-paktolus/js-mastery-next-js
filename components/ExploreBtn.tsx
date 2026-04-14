@@ -1,25 +1,17 @@
-'use client'
+'use client';
+
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 const ExploreBtn = () => {
-  return (
-    <div className="flex justify-center my-4 sm:my-6">
-      <a
-        href="#events"
-        className="
-          flex items-center gap-2
-          px-4 sm:px-6
-          py-2 sm:py-3
-          text-base sm:text-lg md:text-xl
-          border rounded-xl
-          hover:bg-black/30 transition
-        "
-      >
-        Explore Events
-        <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5" />
-      </a>
-    </div>
-  );
-};
+    return (
+        <button type="button" id="explore-btn" className="mt-7 mx-auto" onClick={() => console.log('CLICK')}>
+            <a href="#events" className="flex gap-2">
+                Explore Events
+             <ArrowDown/>
+            </a>
+        </button>
+    )
+}
 
-export default ExploreBtn;
+export default ExploreBtn
